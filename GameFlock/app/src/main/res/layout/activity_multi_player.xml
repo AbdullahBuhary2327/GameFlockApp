@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/_0e1727"
+    tools:context=".MultiPlayerActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        app:cardCornerRadius="30dp"
+        android:layout_centerInParent="true"
+        android:background="@color/blue_shade"
+        app:cardElevation="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:padding="24dp"
+            android:orientation="vertical"
+            android:background="@drawable/blue_border">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Enter \nPlayers Names"
+                android:textAlignment="center"
+                android:textSize="36sp"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/player1"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/blue_border"
+                android:paddingLeft="20dp"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textStyle="italic"
+                android:hint="Enter Player 1"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textColorHint="@color/white"
+                android:drawableLeft="@drawable/ic_xicon"
+                android:drawablePadding="10dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/player2"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/blue_border"
+                android:paddingLeft="20dp"
+                android:maxLines="1"
+                android:singleLine="true"
+                android:textStyle="italic"
+                android:hint="Enter Player 2"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textColorHint="@color/white"
+                android:drawableLeft="@drawable/ic_oicon"
+                android:drawablePadding="10dp"
+                android:layout_marginBottom="20dp"/>
+            
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:backgroundTint="@color/_0e1727"
+                android:layout_marginTop="30dp"
+                android:id="@+id/startGame"
+                android:textColor="@color/white"
+                android:text="Start"
+                android:textSize="30sp"
+                android:layout_marginBottom="40dp"/>
+
+
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:src="@drawable/homeicn"
+        android:id="@+id/homeBtn" />
+
+    <ImageView
+        android:id="@+id/offBtn"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="30dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:src="@drawable/off" />
+
+    <ImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="30dp"
+        android:id="@+id/returnBtn"
+        android:src="@drawable/previous"
+        android:layout_alignParentBottom="true"
+        />
+
+</RelativeLayout>

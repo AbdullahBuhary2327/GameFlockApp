@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/_0e1727"
+    android:layout_height="match_parent"
+    tools:context=".EditProfile">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:id="@+id/profile_image"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        app:civ_border_color="#FF173851"
+        android:layout_marginBottom="20dp"
+        android:scaleType="centerCrop"
+        app:civ_border_width="5dp"
+        android:src="@drawable/man2"/>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:id="@+id/linear"
+        android:weightSum="2"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_below="@id/mailText">
+
+        <Button
+            android:id="@+id/btnClose"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="70dp"
+            android:backgroundTint="#B71C1C"
+            android:text="Close"
+            android:background="@drawable/background_solid"
+            android:textColor="#F2F2F2"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginRight="6dp"
+            app:cornerRadius="20dp"
+            app:icon="@drawable/baseline_close_24" />
+
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="70dp"
+            android:backgroundTint="#1B5E20"
+            android:text="Save"
+            android:background="@drawable/background_solid"
+            android:textColor="#F2F2F2"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginRight="6dp"
+            app:cornerRadius="20dp"
+            app:icon="@drawable/baseline_save_alt_24" />
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lineraView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/profile_image"
+        android:layout_marginStart="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+        <Button
+            android:id="@+id/btnGallery"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_marginRight="6dp"
+            android:layout_weight="1"
+            android:background="@drawable/background_solid"
+            android:backgroundTint="@color/blue_shade"
+            android:text="Gallery"
+            android:textColor="#F2F2F2"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:cornerRadius="20dp"
+            app:icon="@drawable/baseline_close_24" />
+
+        <Button
+            android:id="@+id/btnCamera"
+            android:layout_width="0dp"
+            android:layout_height="70dp"
+            android:layout_marginRight="6dp"
+            android:layout_weight="1"
+            android:background="@drawable/background_solid"
+            android:backgroundTint="@color/blue_shade"
+            android:text="Camera"
+            android:textColor="#F2F2F2"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:cornerRadius="20dp"
+            app:icon="@drawable/baseline_save_alt_24" />
+
+
+    </LinearLayout>
+
+
+    <EditText
+        android:layout_width="match_parent"
+        android:id="@+id/userText"
+        android:layout_height="70dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/background_solid"
+        android:backgroundTint="#F2F2F2"
+        android:elevation="5dp"
+        android:hint="User Name"
+        android:layout_below="@id/lineraView"
+        android:inputType="text"
+        android:paddingLeft="30dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:id="@+id/phoneText"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/background_solid"
+        android:backgroundTint="#F2F2F2"
+        android:elevation="5dp"
+        android:hint="Phone Number"
+        android:layout_below="@id/userText"
+        android:inputType="text"
+        android:paddingLeft="30dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:id="@+id/mailText"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/background_solid"
+        android:backgroundTint="#F2F2F2"
+        android:elevation="5dp"
+        android:enabled="false"
+        android:hint="Email"
+        android:layout_below="@id/phoneText"
+        android:inputType="text"
+        android:paddingLeft="30dp" />
+
+    <ProgressBar
+        android:layout_width="32dp"
+        android:layout_height="wrap_content"
+        android:indeterminateTint="@color/blue_shade"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/linear"
+        android:id="@+id/progress_bar_profile"/>
+
+
+
+</RelativeLayout>

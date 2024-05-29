@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0e1727"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="397dp"
+        android:layout_height="219dp"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/gamelogo3" />
+
+    <TextView
+        android:id="@+id/loadingTxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:text="Loading..."
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/progress_bar"
+        android:textColor="#00BCD4"
+        android:textSize="30sp" />
+
+
+
+    <ProgressBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/progress_bar"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="70dp"
+        android:progressTint="#00BCD4"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        />
+
+    <TextView
+        android:id="@+id/text_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-black"
+        android:layout_alignParentBottom="true"
+        android:text="0 %"
+        android:layout_marginBottom="30dp"
+        android:layout_centerHorizontal="true"
+
+        android:textColor="#00BCD4"
+        android:textSize="30sp" />
+
+
+</RelativeLayout>

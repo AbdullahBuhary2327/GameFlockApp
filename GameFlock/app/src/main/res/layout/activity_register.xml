@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0e1727"
+    tools:context=".RegisterActivity">
+
+        <ImageView
+            android:id="@+id/imgLogo"
+            android:layout_width="243dp"
+            android:layout_height="251dp"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/gamelogooriginal" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="270dp">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/Email"
+                android:layout_width="300dp"
+                android:layout_height="53dp"
+                android:singleLine="true"
+                android:maxLines="1"
+                android:textColor="@color/white"
+                android:background="@color/blue_shade"
+                android:hint="@string/email">
+
+            </com.google.android.material.textfield.TextInputEditText>
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="340dp"
+            android:layout_centerHorizontal="true"
+            >
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/Password"
+                android:layout_width="300dp"
+                android:layout_height="53dp"
+                android:singleLine="true"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:textColor="@color/white"
+                android:background="@color/blue_shade"
+                android:hint="@string/password">
+
+            </com.google.android.material.textfield.TextInputEditText>
+        </com.google.android.material.textfield.TextInputLayout>
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignBottom="@id/RegisterBtn"
+        android:layout_marginBottom="-54dp"
+        android:id="@+id/progressBar"
+        android:visibility="gone"/>
+
+
+        <Button
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="420dp"
+            android:id="@+id/RegisterBtn"
+            android:backgroundTint="@color/blue_shade"
+            android:textColor="@color/white"
+            android:textSize="25sp"
+            android:layout_centerHorizontal="true"
+            android:text="@string/register"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/Have"
+            android:layout_alignBottom="@id/RegisterBtn"
+            android:layout_marginBottom="-84dp"
+            android:text="@string/already_have_an_account"
+            android:textColor="@color/white"
+            android:layout_centerHorizontal="true"
+            android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/LoginNow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignBottom="@id/RegisterBtn"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="-116dp"
+        android:text="@string/login_instead"
+        android:textColor="@color/_00bcd4"
+        android:textSize="20sp" />
+
+
+</RelativeLayout>

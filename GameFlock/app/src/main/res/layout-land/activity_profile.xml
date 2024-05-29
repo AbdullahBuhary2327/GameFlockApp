@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/_0e1727"
+    tools:context=".ProfileActivity">
+
+
+
+
+    <ImageView
+        android:id="@+id/imgLogo2"
+        android:layout_width="85dp"
+        android:layout_height="81dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/gamelogooriginal"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="560dp"
+        android:layout_height="250dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/linear_background"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.906"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.627">
+
+
+
+        <LinearLayout
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+
+
+            <Button
+                android:id="@+id/goToProfile"
+                android:layout_width="180dp"
+                android:layout_height="60dp"
+                android:background="@drawable/background_solid"
+                android:backgroundTint="@color/blue_shade"
+                android:text="Profile"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                tools:layout_editor_absoluteX="371dp" />
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="200dp"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:layout_marginStart="40dp"
+            android:orientation="vertical">
+
+
+            <Button
+                android:id="@+id/AboutUs"
+                android:layout_width="180dp"
+                android:layout_height="60dp"
+                android:background="@drawable/background_solid"
+                android:backgroundTint="@color/blue_shade"
+                android:text="About Us"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="531dp"
+                tools:layout_editor_absoluteY="181dp" />
+
+            <Button
+                android:id="@+id/trackYourGame"
+                android:layout_width="180dp"
+                android:layout_height="60dp"
+                android:background="@drawable/background_solid"
+                android:backgroundTint="@color/blue_shade"
+                android:text="Track Your Game"
+                android:layout_marginTop="40dp"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="531dp"
+                tools:layout_editor_absoluteY="181dp" />
+
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="100dp"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        android:background="@drawable/nav_bar"
+        android:orientation="vertical"
+        android:gravity="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:src="@drawable/baseline_settings_242"
+            android:id="@+id/buttonprofile"/>
+
+
+        <ImageView
+            android:layout_width="50dp"
+            android:id="@+id/homeBtn"
+            android:layout_marginTop="30dp"
+            android:layout_height="50dp"
+            android:src="@drawable/baseline_home_24"/>
+        <TextView
+            android:id="@+id/homeTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="30dp"
+            android:text="Home"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/logoutImg"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+
+            app:srcCompat="@drawable/off"
+            />
+
+        <TextView
+            android:id="@+id/logoutTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="Logout"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            />
+
+    </LinearLayout>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

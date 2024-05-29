@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1073299525814",
+    "project_id": "gameflock-4295b",
+    "storage_bucket": "gameflock-4295b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1073299525814:android:f50b7d749f934deca4d617",
+        "android_client_info": {
+          "package_name": "com.example.gameflock"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1073299525814-5hotidamvejdaedfsng7n5mpr2982h09.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAr4oMgAHsAOC1mW7QhOIPRx_o-n0IIO10"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1073299525814-5hotidamvejdaedfsng7n5mpr2982h09.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "997531523025",
+    "project_id": "game-flock",
+    "storage_bucket": "game-flock.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:997531523025:android:e4efa89b44ee5a4c9c32f0",
+        "android_client_info": {
+          "package_name": "com.example.gameflock"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBE_9rrAhBfnz9RrzH_jBKLqPe7CgyOjng"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

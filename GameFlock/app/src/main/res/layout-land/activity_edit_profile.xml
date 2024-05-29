@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/_0e1727"
+    tools:context=".EditProfile">
+
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/profile_image"
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:layout_marginStart="148dp"
+        android:layout_marginTop="16dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/man2"
+        app:civ_border_color="#FF173851"
+        app:civ_border_width="5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linear"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/mailText"
+        android:orientation="horizontal"
+        android:padding="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/btnClose"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="6dp"
+            android:background="@drawable/background_solid"
+            android:backgroundTint="#B71C1C"
+            android:text="Close"
+            android:textColor="#F2F2F2"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:cornerRadius="20dp"
+            app:icon="@drawable/baseline_close_24" />
+
+        <Button
+            android:id="@+id/btnSave"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="6dp"
+            android:background="@drawable/background_solid"
+            android:backgroundTint="#1B5E20"
+            android:text="Save"
+            android:textColor="#F2F2F2"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:cornerRadius="20dp"
+            app:icon="@drawable/baseline_save_alt_24" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/lineraView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/profile_image"
+        android:layout_marginStart="324dp"
+        android:layout_marginBottom="232dp"
+        android:orientation="vertical"
+        android:padding="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <Button
+            android:id="@+id/btnGallery"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_marginRight="6dp"
+            android:background="@drawable/background_solid"
+            android:backgroundTint="@color/blue_shade"
+            android:text="Gallery"
+            android:textColor="#F2F2F2"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:cornerRadius="20dp"
+            app:icon="@drawable/baseline_close_24" />
+
+        <Button
+            android:id="@+id/btnCamera"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="6dp"
+            android:background="@drawable/background_solid"
+            android:backgroundTint="@color/blue_shade"
+            android:text="Camera"
+            android:textColor="#F2F2F2"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:cornerRadius="20dp"
+            app:icon="@drawable/baseline_save_alt_24" />
+
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/phoneText"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/userText"
+        android:background="@drawable/background_solid"
+        android:backgroundTint="#F2F2F2"
+        android:elevation="5dp"
+        android:hint="Phone Number"
+        android:inputType="text"
+        android:paddingLeft="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/linear"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/mailText"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/phoneText"
+        android:layout_marginStart="64dp"
+        android:background="@drawable/background_solid"
+        android:backgroundTint="#F2F2F2"
+        android:elevation="5dp"
+        android:enabled="false"
+        android:hint="Email"
+        android:inputType="text"
+        android:paddingLeft="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/phoneText"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/profile_image"
+        app:layout_constraintVertical_bias="0.4" />
+
+    <ProgressBar
+        android:id="@+id/progress_bar_profile"
+        android:layout_width="32dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linear"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="268dp"
+        android:layout_marginEnd="116dp"
+        android:indeterminateTint="@color/blue_shade"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/userText"
+        android:layout_width="300dp"
+        android:layout_height="50dp"
+        android:layout_below="@id/lineraView"
+        android:layout_marginEnd="60dp"
+        android:background="@drawable/background_solid"
+        android:backgroundTint="#F2F2F2"
+        android:elevation="5dp"
+        android:hint="User Name"
+        android:inputType="text"
+        android:paddingLeft="30dp"
+        app:layout_constraintBottom_toTopOf="@+id/phoneText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/lineraView" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="false" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/gameiconnew"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/gameiconnew"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.NoActionBar.Fullscreen"
+        tools:targetApi="31">
+        <activity
+            android:name=".EditProfile"
+            android:exported="false" />
+        <activity
+            android:name=".AboutUs"
+            android:exported="false" />
+        <activity
+            android:name=".BrickBreakerHome"
+            android:exported="false" />
+        <activity
+            android:name=".SnakeGame"
+            android:exported="false" />
+        <activity
+            android:name=".SnakeHomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TicGameDisplay"
+            android:exported="false" />
+        <activity
+            android:name=".TicPlayerSetup"
+            android:exported="false" />
+        <activity
+            android:name=".TicTacToeHomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ProfileActivity"
+            android:exported="false" />
+        <activity
+            android:name=".HomeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
+        <activity
+            android:name=".MainActivity"
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".Profile.UploadActivity"
+            android:exported="false"/>
+
+        <activity android:name=".Profile.UpdateActivity"
+            android:exported="false"/>
+
+        <activity android:name=".Profile.DetailActivity"
+            android:exported="false"/>
+
+        <activity android:name=".Profile.ProfileList"
+            android:exported="false"/>
+
+
+
+        <receiver
+            android:name=".service.NetworkBroadcast"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="andoid.net.conn.CONNECTIVITY_CHANGE" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

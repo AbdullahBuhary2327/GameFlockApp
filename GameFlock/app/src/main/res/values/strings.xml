@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Game Flock</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="don_t_have_an_account">Don\'t have an Account?</string>
+    <string name="register_now">Register Now</string>
+    <string name="register">Register</string>
+    <string name="already_have_an_account">Already have an Account</string>
+    <string name="login_instead">Login Instead</string>
+    <string name="player_two">Player Two</string>
+    <string name="player_one">Player One</string>
+    <string name="results">Results</string>
+    <string name="enter_player_names">Enter Player Names</string>
+    <string name="player_1">Player 1</string>
+    <string name="player_2">Player 2</string>
+    <string name="play_again">Play Again</string>
+    <string name="quit">Quit</string>
+    <string name="no_internet_connection_ncheck_your_internet_connection_and_try_again">No Internet Connection.\nCheck Your Internet Connection and try again.</string>
+</resources>
